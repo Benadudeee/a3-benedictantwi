@@ -3,7 +3,8 @@
         "node": "22.x"
     },
     "scripts": {
-        "dev": "node server.js"
+        "dev": "node server.js",
+        "start" : "node server.js"
     },
     "dependencies": {
         "cookie-session": "^2.1.1",
