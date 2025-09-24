@@ -53,7 +53,7 @@ app.set('view engine', 'ejs');
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = `mongodb+srv://sbenedict637_db_user:${process.env.PASS}@maincluster.agpfkxw.mongodb.net/?retryWrites=true&w=majority&appName=MainCluster`;
+const uri = `mongodb+srv://${process.env.USERNAME}:${process.env.PASS}@${process.env.HOST}/?retryWrites=true&w=majority&appName=MainCluster`;
 
 
 const client = new MongoClient(uri, {
